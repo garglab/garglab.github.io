@@ -1,20 +1,20 @@
 ---
 layout: nil
----                  
+---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-                     
- <title>Naveen Garg's Homepage</title>
- <link href="http://garglab.github.io/atom.xml" rel="self"/>
- <link href="http://garglab.github.io/"/>
+ 
+ <title>garglab students</title>
+ <link href="http://garglab.github.io/students/atom.xml" rel="self"/>
+ <link href="http://garglab.github.io/students/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://garglab.github.io/</id>
- <author>            
+ <id>http://garglab.github.io/students/</id>
+ <author>
    <name>Naveen Garg</name>
    <email>naveen.garg@gmail.com</email>
  </author>
 
- {% for post in site.posts limit: 50 %}
+ {% for post in site.categories.students limit:50 %}
  <entry>
    <title>{{ post.title }}</title>
    <link href="http://garglab.github.io{{ post.url }}"/>
