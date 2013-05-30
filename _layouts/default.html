@@ -37,9 +37,10 @@ layout: nil
                 <div id="navigation">
                    <ul>
                         <li><a {% if page.section == "home" %}class="selected"{% endif %} href="/">home</a></li>
-                        <li><a {% if page.section == "blog" %}class="selected"{% endif %} href="/blog">blog</a></li>
                         <li><a {% if page.section == "projects" %}class="selected"{% endif %} href="/projects">projects</a></li>
                         <li><a {% if page.section == "students" %}class="selected"{% endif %} href="/students">students</a></li>
+                        <li><a {% if page.section == "intranet" %}class="selected"{% endif %} href="/intranet">intranet</a></li>
+                        <li><a {% if page.section == "blog" %}class="selected"{% endif %} href="/blog">blog</a></li>
                         <li><a {% if page.section == "about" %}class="selected"{% endif %} href="/about">about</a></li>
                     </ul>
                 </div>
@@ -65,17 +66,6 @@ layout: nil
                 
                 {{ content }}
                 
-            </div>
-                <h1>Recent Pages</h1>
-                <div>
-                {% for p in site.posts limit: 15 %}
-                    <p>
-                    <a href="{{ p.url }}">{{ p.title }}</a>
-                    <br/>
-                    <small><em>{{ p.categories | first | upcase}}</em> | {{ p.date | date_to_string }}</small> 
-                    </p>
-                {% endfor %}
-                </div>
             </div>
             <div id="footer">
                 The content of this site is published under 
