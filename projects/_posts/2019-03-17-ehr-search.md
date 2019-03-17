@@ -1,6 +1,6 @@
 ---
 layout: project-page
-title: data mining
+title: data mining the ehr
 description: search and retrieval of medical records
 ---
 
