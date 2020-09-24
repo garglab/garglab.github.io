@@ -2,38 +2,14 @@
 layout: default
 section: home
 title: Intro
-description: Naveen Garg's lab homepage
+description: Naveen Garg Radiology Artificial Intelligence lab at MD Anderson Cancer Center
 ---       
           
 <p>       
-research in image segmentation and data mining.
+Garglab does research in applications of data and computing in radiology and cancer medicine.
 </p>                                                                             
-
-<br/>
-
-{% for post in site.categories.blog limit: 4 %}
-    <div class="blog-post">
-        <div style="float:left;"><h2><a href="{{ post.url }}" class="blog-title">{{ post.title }}</a></h2></div>
-        <div style="float:right;"><em>posted on {{ post.date | date: '%B %d, %Y' }}</em></div>
-        <div class="blog-text" style="clear:both;">{{ post.content }}</div>
-    </div>
-{% endfor %}
- 
-{% for post in site.categories.projects limit: 4 %}
-    <div class="blog-post">
-        <div style="float:left;"><h2><a href="{{ post.url }}" class="blog-title">{{ post.title }}</a></h2></div>
-        <div style="float:right;"><em>posted on {{ post.date | date: '%B %d, %Y' }}</em></div>
-        <div class="blog-text" style="clear:both;">{{ post.content }}</div>
-    </div>
-{% endfor %}
-
-{% for post in site.categories.students limit: 4 %}
-    <div class="blog-post">
-        <div style="float:left;"><h2><a href="{{ post.url }}" class="blog-title">{{ post.title }}</a></h2></div>
-        <div style="float:right;"><em>posted on {{ post.date | date: '%B %d, %Y' }}</em></div>
-        <div class="blog-text" style="clear:both;">{{ post.content }}</div>
-    </div>
-{% endfor %}
- 
+<p>Services:</p>
+<ul>datamining: EMR, PACS</ul>
+<ul>deep learning models</ul>
 <br/>
  
